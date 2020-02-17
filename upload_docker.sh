@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=<adriflorence/dockerlocal>
+dockerpath="adriflorence/localdocker"
 
 # Step 2:  
 # Authenticate & tag
@@ -13,4 +13,5 @@ echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-docker push dockerlocal
+docker tag localdocker adriflorence/localdocker
+docker push adriflorence/localdocker
